@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+
+const width5 = Width(5);
+const width10 = Width(10);
+const width15 = Width(15);
+const width20 = Width(20);
+const width30 = Width(30);
+const width40 = Width(40);
+
+const height5 = Height(5);
+const height10 = Height(10);
+const height15 = Height(15);
+const height20 = Height(20);
+const height30 = Height(30);
+const height40 = Height(40);
+const height80 = Height(80);
+const height120 = Height(120);
+
+class Height extends StatelessWidget {
+  final double height;
+
+  const Height(
+    this.height, {
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: height,
+    );
+  }
+}
+
+class Width extends StatelessWidget {
+  final double width;
+
+  const Width(
+    this.width, {
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: width,
+    );
+  }
+}

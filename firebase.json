@@ -1,0 +1,54 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "resumequest",
+          "appId": "1:130362851113:android:ea86b1c63f17750ed2c138",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "resumequest",
+          "appId": "1:130362851113:ios:40b6bda423af3940d2c138",
+          "uploadDebugSymbols": true,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "resumequest",
+          "appId": "1:130362851113:ios:40b6bda423af3940d2c138",
+          "uploadDebugSymbols": true,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "resumequest",
+          "configurations": {
+            "android": "1:130362851113:android:ea86b1c63f17750ed2c138",
+            "ios": "1:130362851113:ios:40b6bda423af3940d2c138",
+            "macos": "1:130362851113:ios:40b6bda423af3940d2c138",
+            "web": "1:130362851113:web:d3d11e20347765cbd2c138"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
